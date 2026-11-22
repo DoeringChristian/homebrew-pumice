@@ -21,9 +21,9 @@ cask "pumice" do
 
   # Pumice is not signed with an Apple Developer certificate. Without this, macOS refuses to
   # open the downloaded app.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Pumice.app"]
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args: ["-dr", "com.apple.quarantine", "{{appdir}}/Pumice.app"]
   end
 
   # Replacing the app under a running copy breaks it (it reads the new files with the old
