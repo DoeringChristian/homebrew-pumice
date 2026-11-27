@@ -1,9 +1,9 @@
 cask "pumice" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.2.24"
-  sha256 arm:   "d50d6d0296b13d1f0652e32474ee786454d680bb7089a04e7af4fee63fe38eb1",
-         intel: "23c21f8b2fd9322b2c457ff09414f15162481b547ed9d6dfe90817914f75774a"
+  version "0.2.25"
+  sha256 arm:   "f253b08d7861e05fd5f744670a1d3c29921078e4ff4137d98c81f06ce98414ab",
+         intel: "e50525aefc19780cce9c1b483f9ca445718f5d6c6e0cb564aa1bd46da9d2eebb"
 
   url "https://github.com/DoeringChristian/pumice/releases/download/v#{version}/Pumice-#{version}-mac-#{arch}.dmg"
   name "Pumice"
